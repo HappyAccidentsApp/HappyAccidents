@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HAPPY ACCIDENTS</title>
+  
+  <link rel="stylesheet" href="index.css" crossorigin="anonymous"/>
+</head>
+<body>
+  <div class="main-container">
+    <div class="caja">
+      <canvas id="canvas" class="marco-foto"></canvas>
+      <div class="anillo-potenciometro" id="potenciometro1Container">
+        <div class="potenciometro" id="potenciometro1"></div>
+      </div>
+      <div class="anillo-potenciometro-1" id="potenciometro2Container">
+        <div class="potenciometro" id="potenciometro2"></div>
+      </div>
+      <div class="anillo-potenciometro-3" id="potenciometro3Container">
+        <div class="potenciometro" id="potenciometro3"></div>
+      </div>
+      <div class="anillo-potenciometro-5" id="potenciometro4Container">
+        <div class="potenciometro" id="potenciometro4"></div>
+      </div>
+      <div class="anillo-potenciometro-7" id="potenciometro5Container">
+        <div class="potenciometro" id="potenciometro5"></div>
+      </div>
+      <div class="anillo-potenciometro-9" id="potenciometro6Container">
+        <div class="potenciometro" id="potenciometro6"></div>
+      </div>
+      <div class="reset" id="resetButton"><div class="group"></div></div>
+      <div class="boton-subir-archivo" id="uploadButton"></div>
+      <div class="boton-descargar" id="downloadButton"></div>
+    </div>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/http-client/4.3.1/http-client.min.js'></script>
+  <script src="index.js"></script>
+  <script>
+    var socket = io('http://localhost:8080');
+console.log("HEY!");
+
+    socket.on('mensaje', data => console.log(data));
+
+    socket.on("connect_error", (err) => {
+      console.log(err);
+  // the reason of the error, for example "xhr poll error"
+  console.log(err.message);
+
+  // some additional description, for example the status code of the initial HTTP response
+  console.log(err.description);
+
+  // some additional context, for example the XMLHttpRequest object
+  console.log(err.context);
+});
+  </script>
+</body>
+</html>

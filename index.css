@@ -1,0 +1,233 @@
+/* Tu CSS modificado */
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: fixed;
+  width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: rgb(0, 255, 17);
+}
+.caja {
+  position: fixed;
+  width: 902px;
+  height: 500px;
+  margin: 0px 0 0 0px;
+  background: url(./assets/images/caja.png)
+}
+.anillo-potenciometro {
+  position: absolute;
+  width: 10.18%;
+  height: 18.27%;
+  top: 3.51%;
+  left: 71.87%;
+  background: url(./assets/images/anillo_pot_01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 9;
+}
+.potenciometro {
+  position: relative;
+  width: 79.892px;
+  height: 79.892px;
+  margin: 5.78px 0 0 5.363px;
+  background: url(./assets/images/Pot_01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 17;
+}
+.anillo-potenciometro-1 {
+  position: absolute;
+  width: 10.18%;
+  height: 18.27%;
+  top: 3.51%;
+  left: 87.08%;
+  background: url(./assets/images/anillo_pot_01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 12;
+}
+.potenciometro {
+  position: relative;
+  width: 79.892px;
+  height: 79.892px;
+  margin: 5.78px 0 0 5.927px;
+  background: url(./assets/images/Pot_01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 18;
+}
+.fondo {
+  position: relative;
+  width: 472px;
+  height: 448px;
+  margin: 6.202px 0 0 6.486px;
+  background: url(./assets/images/fondo_canvas.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+.anillo-potenciometro-3 {
+  position: absolute;
+  width: 10.18%;
+  height: 18.27%;
+  top: 40.46%;
+  left: 71.87%;
+  background: url(./assets/images/anillo_pot_01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 8;
+}
+.potenciometro {
+  position: relative;
+  width: 79.892px;
+  height: 79.892px;
+  margin: 5.705px 0 0 5.363px;
+  background: url(./assets/images/Pot_01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 15;
+}
+.anillo-potenciometro-5 {
+  position: absolute;
+  width: 10.18%;
+  height: 18.27%;
+  top: 40.46%;
+  left: 87.08%;
+  background: url(./assets/images/anillo_pot_01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 11;
+}
+.potenciometro {
+  position: relative;
+  width: 79.892px;
+  height: 79.892px;
+  margin: 5.705px 0 0 5.927px;
+  background: url(./assets/images/Pot_01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 16;
+}
+.reset {
+  position: absolute;
+  width: 7.61%;
+  height: 13.65%;
+  top: 64.2%;
+  left: 59.06%;
+  background: url(./assets/images/reset_button.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 4;
+}
+.group {
+  position: relative;
+  width: 17.05px;
+  height: 17.05px;
+  margin: 25.545px 0 0 25.261px;
+  background: url(./assets/images/dc6d1436-3875-477a-b43d-95813bef9766.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 6;
+}
+.anillo-potenciometro-7 {
+  position: absolute;
+  width: 10.18%;
+  height: 18.27%;
+  top: 77.41%;
+  left: 71.87%;
+  background: url(./assets/images/anillo_pot_01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 7;
+}
+.potenciometro {
+  position: relative;
+  width: 79.892px;
+  height: 79.892px;
+  margin: 5.63px 0 0 5.363px;
+  background: url(./assets/images/Pot_01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 13;
+}
+.anillo-potenciometro-9 {
+  position: absolute;
+  width: 10.18%;
+  height: 18.27%;
+  top: 77.41%;
+  left: 87.08%;
+  background: url(./assets/images/anillo_pot_01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 10;
+}
+.potenciometro {
+  position: relative;
+  width: 79.892px;
+  height: 79.892px;
+  margin: 5.63px 0 0 5.927px;
+  background: url(./assets/images/Pot_01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 14;
+}
+.boton-subir-archivo {
+  position: absolute;
+  width: 7.61%;
+  height: 13.65%;
+  top: 82.13%;
+  left: 59.06%;
+  background: url(./assets/images/upload_button.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 2;
+}
+.boton-descargar {
+  position: absolute;
+  width: 7.61%;
+  height: 13.65%;
+  top: 46%;
+  left: 59.06%;
+  background: url(./assets/images/download_button.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 2;
+}
+
+canvas.marco-foto {
+  position: absolute;
+  width: 53.7%;
+  height: 92.16%;
+  top: 3.50%;
+  left: 2.50%;
+  z-index: 21; /* Ajustado para que esté por encima de otros elementos, incluida la caja */
+  border: 2.2px solid rgb(29, 29, 29); /* Borde blanco de 2px */
+  background-color: rgb(58, 58, 58);
+}
+
+.boton-descargar:hover {
+  cursor: pointer;
+}
